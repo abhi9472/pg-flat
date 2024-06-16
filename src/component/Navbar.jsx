@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-offwhite p-3">
+    <nav className="bg-neutral-800 p-3">
       <div className="container mx-auto flex items-center">
         <div className="text-customRed text-2xl font-bold">
           <a href="/">MyApp</a>
@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="relative w-full max-w-lg">
             <input
               type="text"
-              className="block w-full px-4 py-2 pl-10 text-white bg-gray-700 border border-transparent rounded-full placeholder-gray-400 focus:border-white focus:ring-0"
+              className="block w-full px-4 py-2 pl-10 text-black bg-stone-300	 border border-transparent rounded-full placeholder-white-400 focus:border-white focus:ring-0"
               placeholder="Search"
             />
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -38,7 +38,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? 'text-black border-b-2 border-customRed' : 'text-black hover:text-customRed'
+                isActive ? 'text-white border-b-2 border-customRed' : 'text-white hover:text-customRed'
               }
             >
               Home
@@ -48,7 +48,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? 'text-black border-b-2 border-customRed' : 'text-black hover:text-customRed'
+                isActive ? 'text-white border-b-2 border-customRed' : 'text-white hover:text-customRed'
               }
             >
               About
@@ -58,7 +58,7 @@ const Navbar = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? 'text-black border-b-2 border-customRed' : 'text-black hover:text-customRed'
+                isActive ? 'text-white border-b-2 border-customRed' : 'text-white hover:text-customRed'
               }
             >
               Services
@@ -68,7 +68,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? 'text-black border-b-2 border-customRed' : 'text-black hover:text-customRed'
+                isActive ? 'text-white border-b-2 border-customRed' : 'text-white hover:text-customRed'
               }
             >
               Contact
